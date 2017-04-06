@@ -1,0 +1,9 @@
+spring:
+ datasource:
+    url: ${app.jdbc.url}
+    username: ${app.db.username}
+    password: ${app.db.password}
+ jackson:
+   date-format: "yyyy-MM-dd"
+   serialization:
+     WRITE_DATES_AS_TIMESTAMPS : false
