@@ -31,7 +31,7 @@ build {
 }
 
 jar {
-    baseName = 'core-address'
+    baseName = 'spring-boot-noms-template'
     if (System.getenv('GIT_COMMIT')) {
         version = version + '.' + System.getenv('GIT_COMMIT')
     }
