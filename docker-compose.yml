@@ -1,0 +1,16 @@
+version: '3.1'
+services:
+  spring-boot-noms-template:
+   build: .
+   networks:
+     - spon-network
+   ports:
+    - "8080:8080"
+   healthcheck:
+     test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+   environment:
+     - JAVA_OPTS=-Xms128m -Xmx128m
+     - SERVER_PORT=8080
+     - SPRING_PROFILES_ACTIVE=logtoconsole
+networks:
+  spon-network:
