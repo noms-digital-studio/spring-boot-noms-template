@@ -97,7 +97,7 @@ See kd
 
 ## Authors
 
-[UK Home Office](https://github.com/noms-digital-studio)
+[NOMS Digital Studio](https://github.com/noms-digital-studio)
 
 ## License
 
